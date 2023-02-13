@@ -10,6 +10,7 @@
 #include <Windows.h>
 
 using namespace std;
+//abobaboba 
 
 HANDLE h = GetStdHandle(STD_OUTPUT_HANDLE); //получаем наше окно, в котором нужно изменить цвет
 
