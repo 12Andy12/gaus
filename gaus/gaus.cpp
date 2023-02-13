@@ -10,8 +10,8 @@
 #include <Windows.h>
 
 using namespace std;
-//abobaboba 
-
+//abobaboba  
+    
 HANDLE h = GetStdHandle(STD_OUTPUT_HANDLE); //получаем наше окно, в котором нужно изменить цвет
 
 bool operator!= (Rational f, int s)
@@ -248,12 +248,16 @@ bool  solve(vector<vector<T>>& a)
 					cout << "Нет решений\n";
 					return false;
 				}
+				//cout << "\n-\n";
 				if (k + step == size && a[k][k + step + 1] == 0)
 				{
+					//cout << "\n--\n";
 					a.erase(a.begin() + k);
+					size = min(a.size(), whitespace);
+					//cout << "\n---\n";
 					break;
 				}
-
+				//cout << "\n----\n";
 				if (flag == false)
 				{
 					step++;
@@ -263,6 +267,8 @@ bool  solve(vector<vector<T>>& a)
 
 
 		}
+		if (k >= size)
+			break;
 		if (a[k][k + step] != 1)
 		{
 			if (divStr(a[k], a[k][k + step]) == false)
@@ -295,10 +301,8 @@ int main()
 {
 
 	setlocale(0, "");
-	cout << "sdfsdf";
 	SetConsoleTextAttribute(h, 2);
-	cout << "sdfsdf";
-	system("CLS");
+
 	vector<vector <Rational> > matrix;
 	string fileName;
 	cin >> fileName;
