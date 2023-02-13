@@ -128,6 +128,7 @@ void read(vector<vector <T> >& matrix, string fileName)
 		for (int j = 0; j < whitespace + 1; j++)
 		{
 			T a;
+
 			file >> a;
 			newLine.push_back(a);
 			if (file.eof())
@@ -331,6 +332,7 @@ int main()
 					continue; 
 				if (matrix[line][j] != 0)
 				{
+
 					if (matrix[line][j] < 0)
 						cout << " + ";
 					else
