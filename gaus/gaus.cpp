@@ -3,7 +3,7 @@
 #include <iostream>
 #include <vector>
 #include <iomanip>
-#include "rational.h"
+#include "Ratinal.h"
 #include <cassert>
 #include <conio.h>
 #include <stdio.h>
