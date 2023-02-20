@@ -8,6 +8,7 @@ Rational rabs(Rational a)
 	return r;
 }
 
+
 Rational Rational::operator- (Rational s)
 {
 	Rational r;
@@ -86,7 +87,7 @@ Rational Rational::operator= (Rational s)
 long long Rational::Nod(long long a, long long b)
 {
 	if (a == 0 && b == 0)
-		throw "Daun tupoi";
+		throw "Error"; 
 	if (b == 0)
 		return a;
 	if (a == 0)

@@ -10,6 +10,7 @@
 using namespace std;
 class Rational
 {
+
 public:
 	long long a, b; //a-числитель b-знаменатель//
 	Rational(long long chislit = 0, long long znamenat = 1) :a(chislit), b(znamenat)
@@ -32,5 +33,6 @@ public:
 
 	long long Nod(long long, long long);
 };
-
+ 
 Rational rabs(Rational a);
+
